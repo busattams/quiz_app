@@ -72,8 +72,8 @@ const QuestionsContainer = ({ player, difficulty, goBack }) => {
    return (
       <section className='quiz-container'>
          <header>
-            <p onClick={goBack}>Go back</p>
-            <h2>Good luck, {player}!</h2>
+            <button className='back-btn' onClick={goBack}> Go back</button>
+            <h2 className='title'>Good luck, <span>{player}</span></h2>
             <p>You're playing the {difficulty} level.</p>
          </header>
 

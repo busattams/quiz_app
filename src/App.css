@@ -13,6 +13,10 @@ body {
    font-family: 'Nunito Sans', sans-serif;
 }
 
+body.modal-open {
+   overflow-y: hidden;
+}
+
 #root {
    width: 100%;
 }
@@ -29,13 +33,31 @@ button {
    font-weight: 900;
    line-height: 60px;
    border-radius: 25px;
-   background: #0baebd;   
+   background: linear-gradient(to right, #03bdce, #64e1ec);  
+   border: 2px solid transparent; 
    text-transform: uppercase;
    color: #fff;
-   box-shadow: 0 2px 3px rgba(0,0,0,.1);
+   cursor: pointer;
 }
 
+.btn-outline {
+   background: transparent;
+   color: #0baebd;
+   border-color: #03bdce;
+}
 
 @media screen and (min-width: 768px) {
-   
+   body {
+      background: linear-gradient(#aef5fc, #dff0f1);
+      padding: 5vh 0;
+   }
+   #root {
+      width: 60vw;
+      position: relative;
+      background: #fff;
+      border-radius: 20px;
+   }
+   .user-info, .quiz-container main {
+      border-radius: 20px !important;
+   }
 }

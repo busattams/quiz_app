@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 
 const Questions = ({ questions, currentQuestion, userAnswerHandler }) => (
    <>
-      <span>Question {currentQuestion + 1}/{questions.length}</span>
-      <h1>{questions[currentQuestion].question}</h1>
+      <span className='quiz-tracker'>Question <span>{currentQuestion + 1}</span>/{questions.length}</span>
+      <h1 className='question'>{questions[currentQuestion].question}</h1>
       <form onChange={userAnswerHandler} className='questionBox'>
          { Object.entries(questions[currentQuestion].answers)
+            // filter the questions with < 6 anwers
             .filter(answer => answer[1] != null)
             .map((answer, i) => (
                <div key={`answer${i}`}>
@@ -17,7 +18,6 @@ const Questions = ({ questions, currentQuestion, userAnswerHandler }) => (
                      { answer[1] }
                   </label>
                </div>
-
             ))
          }
       </form>

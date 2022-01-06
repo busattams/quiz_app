@@ -6,7 +6,7 @@
 .homepage-header {
    padding: 10vh 8vw 5vh;
 }
-.homepage-header .title {
+.title {
   color: #54d2de;
   font-weight: 900;
   font-size: calc(20px + 6vw);
@@ -21,6 +21,7 @@
    height: 100%;
    border-radius: 20px 20px 0 0;
    padding: 3rem 8vw;
+   box-shadow: 0 -3px 10px rgba(0,0,0,.1);
 }
 
 .user-info form {
@@ -131,4 +132,8 @@
 .toggleSwitch input:checked ~ label:after {
    transform: translateX(calc(-50% + 12px));
    
+}
+
+@media screen and (min-width: 768px) {
+  
 }

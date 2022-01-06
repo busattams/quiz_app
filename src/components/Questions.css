@@ -2,31 +2,57 @@
    background: linear-gradient(to bottom, #54d2de, #7cf4ff);
    width: 100%;
    height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 .quiz-container header {
    padding: 8vh 10vw 5vh;
 }
+.quiz-container header .title {
+   color: #111;
+   font-size: 2rem;
+   font-weight: 400;
+   line-height: 1;
+}
+.quiz-container header .title span {
+   font-size: 2.4rem;
+   font-weight: 600;
+}
 .back-btn {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   background: transparent;
    width: auto;
    min-height: auto;
    height: auto;
+   font-weight: 600;
    padding: 5px;
    line-height: 1;
-   font-size: 14px;
-   background: #fff;
-   color: #54d2de;
+   font-size: 16px;
+   color: #fff;
 }
 .quiz-container main {
    background: #fafafa;
+   box-shadow: 0 -3px 10px rgba(0,0,0,.1);
    height: 100%;
    border-radius: 20px 20px 0 0;
-   padding: 3rem 8vw;
+   padding: 2rem 8vw;
 }
-
-
+.quiz-tracker {
+   font-size: 1.3rem;
+   font-weight: 400;
+   color: #54d2de;
+   margin-bottom: 10px;
+   display: block;
+}
+.question {
+   font-size: 1.4rem;
+   line-height: 1.1;
+}
+.quiz-tracker span {font-weight: 600;}
 .questionBox label {
    width: 100%;
-   display: block;
    background: #54d2de;
    margin: 20px 0 25px;
    border-radius: 20px;
@@ -37,6 +63,14 @@
    display: flex;
    align-items: center;
    color: #fff;
+   cursor: pointer;
+   box-shadow: 0 2px 5px rgba(0,0,0,.1);
+   transition: all .3s ease;
+}
+.questionBox label:focus,
+.questionBox label:hover,
+.questionBox label:active {
+   background: #05bdce;
 }
 .questionBox label.selected {
    background: #d4494b;
@@ -51,4 +85,10 @@
 .questionBox label input {
    position: absolute;
    opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+   .quiz-container {
+      border-radius: 20px;
+   }
 }
