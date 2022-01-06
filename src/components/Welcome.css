@@ -1,0 +1,134 @@
+.homepage {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.homepage-header {
+   padding: 10vh 8vw 5vh;
+}
+.homepage-header .title {
+  color: #54d2de;
+  font-weight: 900;
+  font-size: calc(20px + 6vw);
+}
+
+.homepage-header .description {
+   font-size: .9rem;
+}
+
+.user-info {
+   background: linear-gradient(to bottom, #54d2de, #7cf4ff) ;
+   height: 100%;
+   border-radius: 20px 20px 0 0;
+   padding: 3rem 8vw;
+}
+
+.user-info form {
+   margin-top: 40px;
+}
+
+.user-info h3 {
+   text-indent: 10px;
+}
+
+
+.name-input {
+   width: 100%;
+   background: #fff;
+   border-radius: 20px;
+   color: #54d2de;
+   font-size: 1.8rem;
+   line-height: 40px;
+   font-weight: 600;
+   padding: 10px;
+   text-indent: 10px;
+   box-shadow: 0 2px 3px rgba(0,0,0,.1);
+   margin: 10px 0 30px;
+}
+
+.name-input::placeholder {
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: #ccc;
+   transition: all .5s ease;
+   opacity: 1;
+   position: relative;
+}
+
+.name-input:focus::placeholder {
+   opacity: 0;
+}
+
+
+.user-info button {
+   text-align: center;
+   display: inline-block;
+}
+.toggleSwitch {
+   position: relative;
+   margin: 10px auto 40px;
+   background: #fff;
+   padding: 20px;
+   border-radius: 25px;
+   box-shadow: 0 2px 3px rgba(0,0,0,.1);
+}
+
+.toggleSwitch span {
+   /* font-size: 20px; */
+   font-weight: 600;
+   /* color: #fff; */
+   position: absolute;
+   line-height: 1;
+   text-align: center;
+   max-width: 100px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.toggleSwitch span:first-of-type {
+   left: 20px;
+}
+.toggleSwitch span:last-of-type {
+   right: 20px;
+}
+.toggleSwitch label {
+   width: 100%;
+   height: 34px;
+   display: block;
+   position: relative;
+}
+
+.toggleSwitch label:before {
+   content: '';
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 0;
+   width: 60px;
+   height: 34px;
+   border-radius: 34px;
+   background: #54d2de;
+   border: 2px solid #54d2de;
+}
+.toggleSwitch label:after {
+   content: '';
+   position: absolute;
+   left: 50%;
+   transform: translateX(calc(-50% - 12px));
+   top: 4px;
+   height: 26px;
+   width: 26px;
+   border-radius: 50%;
+   background: #fff;
+   box-shadow: 0 0px 2px #ccc;
+   transition: all .5s ease;
+}
+
+.toggleSwitch input {
+   position: absolute;
+   width: 20px;
+   opacity: 0;
+}
+.toggleSwitch input:checked ~ label:after {
+   transform: translateX(calc(-50% + 12px));
+   
+}

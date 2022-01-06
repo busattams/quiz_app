@@ -1,0 +1,41 @@
+*, *:before, *:after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   overflow-x: hidden;
+   background: #fafafa;
+   font-family: 'Nunito Sans', sans-serif;
+}
+
+#root {
+   width: 100%;
+}
+input, button {
+   box-shadow: none;
+   border: none;
+   outline: none;
+   font-family: 'Nunito Sans', sans-serif;
+}
+
+button {
+   width: 100%;
+   font-size: 1.8rem;
+   font-weight: 900;
+   line-height: 60px;
+   border-radius: 25px;
+   background: #0baebd;   
+   text-transform: uppercase;
+   color: #fff;
+   box-shadow: 0 2px 3px rgba(0,0,0,.1);
+}
+
+
+@media screen and (min-width: 768px) {
+   
+}
