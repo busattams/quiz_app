@@ -68,7 +68,7 @@
 .results-container .questionBox label:hover {
    background: #54d2de;
 }
-@media screen and (min-width: 76px) {
+@media screen and (min-width: 768px) {
    .results-container {
       padding: 3vh 20vw 5vh;
    }
