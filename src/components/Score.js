@@ -16,7 +16,7 @@ const Score = ({ score, totalQuestions, playAgain, correctAnswers, userAnswers, 
          <div className='score-result'>
             <p className='title'>Result</p>
             <p className='score-qnty'><span>{score}</span>/{ totalQuestions }</p>
-            <p style={{fontSize: '20px'}}>You got {score * 100 / totalQuestions} of the answers correct.</p>
+            <p style={{fontSize: '20px'}}>You got {score * 100 / totalQuestions}% of the answers correct.</p>
          </div>
          <div>
             <button className='btn-outline' 
