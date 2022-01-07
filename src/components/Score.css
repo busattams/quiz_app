@@ -74,9 +74,4 @@
       top: 50px;
    }
    
-   .results-container .questionBox label:focus,
-   .results-container .questionBox label:active,
-   .results-container .questionBox label:hover {
-      background: #54d2de;
-   }
 }

@@ -87,9 +87,10 @@
    .quiz-container {
       border-radius: 20px;
    }
-   .questionBox label:not(.right):not(.selected):focus,
-   .questionBox label:not(.right):not(.selected):hover,
-   .questionBox label:not(.right):not(.selected):active {
-      background: #54d2de;
+   .questionBox label:not(.right):not(.selected):hover {
+      background: #35adb8;
+   }
+   .results-container .questionBox label:not(.right):not(.selected):hover {
+      background: #54d2de
    }
 }
