@@ -63,11 +63,7 @@
    box-shadow: 0 2px 5px rgba(0,0,0,.1);
    cursor:initial;
 }
-.results-container .questionBox label:focus,
-.results-container .questionBox label:active,
-.results-container .questionBox label:hover {
-   background: #54d2de;
-}
+
 @media screen and (min-width: 768px) {
    .results-container {
       padding: 3vh 20vw 5vh;
@@ -78,4 +74,9 @@
       top: 50px;
    }
    
+   .results-container .questionBox label:focus,
+   .results-container .questionBox label:active,
+   .results-container .questionBox label:hover {
+      background: #54d2de;
+   }
 }

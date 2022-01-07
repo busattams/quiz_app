@@ -3,6 +3,7 @@ import getQuestions from './QuestionAPI';
 import Questions from './Questions';
 import Score from './Score';
 import './Questions.css'
+import Loader from './Loader';
 
 const QuestionsContainer = ({ player, difficulty, goBack }) => {
    
@@ -85,8 +86,12 @@ const QuestionsContainer = ({ player, difficulty, goBack }) => {
                   currentQuestion={currentQuestion} 
                   userAnswerHandler={userAnswerHandler} 
                />
-            ) : 
-            <p>fetching the questions...</p>
+            ) : (
+               <div style={{textAlign: 'center'}}>
+                  <Loader />
+                  <p>fetching the questions...</p>
+               </div>
+               )
             )
              : ( 
                <Score 

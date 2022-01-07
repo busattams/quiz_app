@@ -67,11 +67,7 @@
    box-shadow: 0 2px 5px rgba(0,0,0,.1);
    transition: all .3s ease;
 }
-.questionBox label:focus,
-.questionBox label:hover,
-.questionBox label:active {
-   background: #05bdce;
-}
+
 .questionBox label.selected {
    background: #d4494b;
    color: #fff;
@@ -90,5 +86,10 @@
 @media screen and (min-width: 768px) {
    .quiz-container {
       border-radius: 20px;
+   }
+   .questionBox label:not(.right):not(.selected):focus,
+   .questionBox label:not(.right):not(.selected):hover,
+   .questionBox label:not(.right):not(.selected):active {
+      background: #54d2de;
    }
 }

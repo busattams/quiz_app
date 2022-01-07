@@ -34,18 +34,55 @@ button {
    line-height: 60px;
    border-radius: 25px;
    background: linear-gradient(to right, #03bdce, #64e1ec);  
-   border: 2px solid transparent; 
    text-transform: uppercase;
    color: #fff;
    cursor: pointer;
 }
 
 .btn-outline {
+   border: 2px solid transparent; 
    background: transparent;
    color: #0baebd;
    border-color: #03bdce;
 }
 
+/*Loader*/
+.lds-ring {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+ }
+ .lds-ring div {
+   box-sizing: border-box;
+   display: block;
+   position: absolute;
+   width: 64px;
+   height: 64px;
+   margin: 8px;
+   border: 8px solid #03bdce;
+   border-radius: 50%;
+   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+   border-color: #03bdce transparent transparent transparent;
+ }
+ .lds-ring div:nth-child(1) {
+   animation-delay: -0.45s;
+ }
+ .lds-ring div:nth-child(2) {
+   animation-delay: -0.3s;
+ }
+ .lds-ring div:nth-child(3) {
+   animation-delay: -0.15s;
+ }
+ @keyframes lds-ring {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
 @media screen and (min-width: 768px) {
    body {
       background: linear-gradient(#aef5fc, #dff0f1);
